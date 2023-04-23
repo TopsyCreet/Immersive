@@ -3,31 +3,42 @@
 
 @media (max-width: 768px)
 {
-    model-viewer{
+   #hotspot-demo{
         right : 0%;
     
           width: 380px;
           height: 500px;
           margin: none;
-        
-     
     
+        }
+        #bike{
+            width: 300px;
+            height: 300px;
+            right: 10%;
+          
+           
         }
 }
 
 @media (min-width: 769px)
 {
-    model-viewer{
+    #hotspot-demo{
         right: 50%;
     
           width: 1750px;
           height: 900px;
           margin: none;
-          
-     
     
         }
+        #bike{
+            width: 1080px;
+            height: 500px;
+            right: 80%;
+            
+           
+        }
 }
+
 @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
@@ -81,7 +92,7 @@ a {
     font-family: Futura, Helvetica Neue, sans-serif;
     font-size: 12px;
     font-weight: 700;
-    max-width: 128px;
+    max-width: 108px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
@@ -103,6 +114,7 @@ a {
     .HotspotAnnotation{
       background-color: #ffffff;
       width: 90px;
+      height: 30px;
       position: absolute;
       transform: translate(10px, 10px);
       border-radius: 10px;
