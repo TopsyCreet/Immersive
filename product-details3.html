@@ -67,9 +67,10 @@
             <div class="swiper-wrapper align-items-center">
 
               <div class="swiper-slide">
-                <model-viewer id="shoe"  loading="eager" src="assets/3D_assets/shoe1.glb"
-                 ar ar-modes="scene-viewer webxr quick-look" camera-controls  shadow-intensity="1"
-                  environment-image="images/music_hall_01_1k.hdr" camera-orbit="294.3deg 85.42deg 17.87m" field-of-view="30deg">
+                <model-viewer id="shoe" loading="eager" camera-controls src="assets/3D_assets/shoe1.glb" 
+                ar ar-modes="webxr scene-viewer quick-look" 
+                shadow-intensity="1" autoplay camera-orbit="294.3deg 85.42deg 17.87m" field-of-view="30deg"
+                environment-image="images/music_hall_01_1k.hdr">
                   <div class="control_shoe">
                       <select id="diffuse_shoe" >
                         <option value="textures/">Material</option>
@@ -79,10 +80,9 @@
                         <option value="textures/shoe2.jfif">Shoe -4</option>
                         <option value="textures/Seamless.jfif">Shoe -5</option>
                         <option value="textures/wall.jpg">Shoe -6</option>
-                  
-                      </select>
-                  
-                </div>
+                      </select>    
+                  </div>
+                
                 
                 <div class="controls_shoe">
                   <button onclick="exportGLB()">Export</button>
@@ -113,7 +113,8 @@
                 });
               
                
-              });</script>
+              });
+              </script>
               <script>
               async function exportGLB(){
               const modelViewer = document.getElementById("shoe");
