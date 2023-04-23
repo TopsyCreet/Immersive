@@ -67,7 +67,7 @@
             <div class="swiper-wrapper align-items-center">
 
               <div class="swiper-slide">
-                <model-viewer id="shoe"  src="assets/3D_assets/shoe.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls  shadow-intensity="1" environment-image="images/music_hall_01_1k.hdr" camera-orbit="294.3deg 85.42deg 17.87m" field-of-view="30deg">
+                <model-viewer id="shoe"  loading="eager" src="assets/3D_assets/shoe1.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls  shadow-intensity="1" environment-image="images/music_hall_01_1k.hdr" camera-orbit="294.3deg 85.42deg 17.87m" field-of-view="30deg">
                   <div class="progress-bar hide" slot="progress-bar">
                       <div class="update-bar"></div>
                   </div>
@@ -93,7 +93,6 @@
               </div>
               </model-viewer>
                 
-              </model-viewer>
               <script type="module">
               const modelViewerTexture1 = document.querySelector("model-viewer#shoe");
               
@@ -121,7 +120,7 @@
               async function exportGLB(){
               const modelViewer = document.getElementById("shoe");
               const glTF = await modelViewer.exportScene();
-              const file = new File([glTF], "export.glb");
+              const file = new File([glTF], "Shoe.glb");
               const link = document.createElement("a");
               link.download =file.name;
               link.href = URL.createObjectURL(file);
