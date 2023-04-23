@@ -11,9 +11,10 @@
     display: inline-block;
   margin: 10px;
     width: 110px;
-    margin-top: 65%;
+    margin-top: 100%;
   border-radius: top-left top-right bottom-right bottom-left;
   border-radius:25px;
+  background-color: white;
   padding: 12px 30px 12px 15px;
   font-size: 11px;
   line-height: 1.3;
@@ -27,6 +28,7 @@
     display: inline-block;
   margin: 10px;
     width: 110px;
+    background-color: white;
   border-radius: top-left top-right bottom-right bottom-left;
   border-radius:25px;
   padding: 12px 30px 12px 15px;
@@ -52,23 +54,18 @@ model-viewer#robo{
 
 }
 
-.select-wrapper {
-position: relative;
-display: inline-block;
-margin: 10px;
-margin-bottom: 45%;
-}
+
 
 select {
-  
-width: 110px;
-border-radius: top-left top-right bottom-right bottom-left;
-border-radius:25px;
-padding: 12px 30px 12px 15px;
-font-size: 16px;
-line-height: 1.3;
 
-
+  display: inline-block;
+  margin: 10px;
+    width: 110px;
+  border-radius: top-left top-right bottom-right bottom-left;
+  border-radius:25px;
+  padding: 12px 30px 12px 15px;
+  font-size: 11px;
+  line-height: 1.3;
 background-color: #ffffff;
 -webkit-appearance: none;
 -moz-appearance: none;
