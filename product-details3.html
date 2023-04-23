@@ -67,9 +67,11 @@
             <div class="swiper-wrapper align-items-center">
 
               <div class="swiper-slide">
-                <model-viewer id="shoe"  loading="eager" src="assets/3D_assets/shoe1.glb" ar ar-modes="scene-viewer webxr quick-look" camera-controls  shadow-intensity="1" environment-image="images/music_hall_01_1k.hdr" camera-orbit="294.3deg 85.42deg 17.87m" field-of-view="30deg">
-                  <div class="controls">
-                      <select id="diffuse" >
+                <model-viewer id="shoe"  loading="eager" src="assets/3D_assets/shoe1.glb"
+                 ar ar-modes="scene-viewer webxr quick-look" camera-controls  shadow-intensity="1"
+                  environment-image="images/music_hall_01_1k.hdr" camera-orbit="294.3deg 85.42deg 17.87m" field-of-view="30deg">
+                  <div class="control_shoe">
+                      <select id="diffuse_shoe" >
                         <option value="textures/">Material</option>
                         <option value="textures/shoe1.jpg">Shoe -1</option>
                         <option value="textures/Duralee.jfif">Shoe -2</option>
@@ -82,14 +84,13 @@
                   
                 </div>
                 
-                <div class="controls1">
+                <div class="controls_shoe">
                   <button onclick="exportGLB()">Export</button>
                 </div>
                 <div class="progress-bar hide" slot="progress-bar">
                   <div class="update-bar"></div>
               </div>
               </model-viewer>
-                
               <script type="module">
               const modelViewerTexture1 = document.querySelector("model-viewer#shoe");
               
@@ -107,7 +108,7 @@
                 }
               
               
-                document.querySelector('#diffuse').addEventListener('input', (event) => {
+                document.querySelector('#diffuse_shoe').addEventListener('input', (event) => {
                   createAndApplyTexture('baseColorTexture', event);
                 });
               
