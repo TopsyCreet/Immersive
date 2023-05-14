@@ -69,66 +69,116 @@
 
                 <div class="swiper-slide">
 
-                  <model-viewer id="hotspot-camera-view-demo" src="assets/3D_assets/car.glb" camera-controls
-                    touch-action="none" poster="poster.webp" shadow-intensity="1"
-                    camera-orbit="-138.9deg 73.68deg 9.789m" field-of-view="45deg" interpolation-decay="200"
-                    min-camera-orbit="auto auto 5%" environment-image="images/music_hall_01_1k.hdr"
-                    ios-src="assets/3D_assets/car.usdz">
-                    <button class="Hotspot" slot="hotspot-1"
-                      data-position="-0.13362305510450057m 0.5017169807008958m -2.320674044677208m"
-                      data-normal="-0.0986658258568322m 0m -0.9951206232452373m" data-orbit="-180.5deg 92.74deg 5.309m"
-                      data-target="-0.13m 0.6317m 1.71013m" data-visibility-attribute="visible">
-                      <div class="HotspotAnnotation">Logo</div>
-                    </button><button class="Hotspot" slot="hotspot-2"
-                      data-position="0.7152269373901579m 0.6849191541239749m -2.0403472027942415m"
-                      data-normal="0.42004508407750724m 0.795571643226713m -0.43660953704181454m"
-                      data-orbit="-191.6deg 89.78deg 5.421m" data-target="-0.15m 0.6317m 1.8m"
-                      data-visibility-attribute="visible">
-                      <div class="HotspotAnnotation">Lights</div>
-                    </button><button class="Hotspot" slot="hotspot-3"
-                      data-position="-1.0629296343936705m 0.9917795383680903m 0.03009694724051748m"
-                      data-normal="-0.8005541267160837m 0.35155154806023375m -0.4853087669250388m"
-                      data-orbit="-4.026deg 84.1deg 5.309m" data-target="-0.9824m 0.788m -3.24m"
-                      data-visibility-attribute="visible">
-                      <div class="HotspotAnnotation">Mirror</div>
-                    </button><button class="Hotspot" slot="hotspot-4"
-                      data-position="-0.024607226551718542m 1.135826683738925m 0.06379065225930451m"
-                      data-normal="0m 0m 1m" data-orbit="0.9713deg 80.83deg 5.309m" data-target="-0.06m 0.54m -3.9m"
-                      data-visibility-attribute="visible">
-                      <div class="HotspotAnnotation">Front Mirror</div>
-                    </button><button class="Hotspot" slot="hotspot-5"
-                      data-position="-0.45958852955236623m 0.8566547299121063m -0.062489594965561654m"
-                      data-normal="0.13281219307773118m 0.44492592427891725m 0.8856646336364769m"
-                      data-orbit="1.22deg 79.92deg 5.309m" data-target="-0.75m 0.18m -4.35m"
-                      data-orbit="3.479deg 64.53deg 5.309m" data-visibility-attribute="visible">
-                      <div class="HotspotAnnotation">Steering</div>
-                    </button><button class="Hotspot" slot="hotspot-6"
-                      data-position="-0.008253913027282511m 0.6235715614635307m -0.1746219408509601m"
-                      data-normal="0.001967195156732021m 0.4858499940534355m 0.8740399953214338m"
-                      data-orbit="-2.383deg 69.84deg 5.309m" data-target="0.06m -0.82m -4.02m"
-                      data-visibility-attribute="visible">
-                      <div class="HotspotAnnotation">Radio</div>
-                    </button>
-                    <div class="progress-bar hide" slot="progress-bar">
+              model-viewer id="hotspot-camera-view-demo" src="car.glb" camera-controls touch-action="none" poster="poster.webp"
+        shadow-intensity="1" camera-orbit="-138.9deg 73.68deg 9.789m" field-of-view="45deg" interpolation-decay="200"
+        min-camera-orbit="auto auto 5%" environment-image="legacy">
+        <button class="Hotspot" slot="hotspot-1"
+            data-position="-0.13362305510450057m 0.5017169807008958m -2.320674044677208m"
+            data-normal="-0.0986658258568322m 0m -0.9951206232452373m" data-orbit="-180.5deg 92.74deg 5.309m"
+            data-target="-0.13m 0.6317m 1.71013m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Logo</div>
+        </button><button class="Hotspot" slot="hotspot-2"
+            data-position="0.7152269373901579m 0.6849191541239749m -2.0403472027942415m"
+            data-normal="0.42004508407750724m 0.795571643226713m -0.43660953704181454m"
+            data-orbit="-191.6deg 89.78deg 5.421m" data-target="-0.15m 0.6317m 1.8m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Lights</div>
+        </button><button class="Hotspot" slot="hotspot-3"
+            data-position="-1.0629296343936705m 0.9917795383680903m 0.03009694724051748m"
+            data-normal="-0.8005541267160837m 0.35155154806023375m -0.4853087669250388m"
+            data-orbit="-4.026deg 84.1deg 5.309m" data-target="-0.9824m 0.788m -3.24m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Mirror</div>
+        </button><button class="Hotspot" slot="hotspot-4"
+            data-position="-0.024607226551718542m 1.135826683738925m 0.06379065225930451m" data-normal="0m 0m 1m"
+            data-orbit="0.9713deg 80.83deg 5.309m" data-target="-0.06m 0.54m -3.9m" data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Front Mirror</div>
+        </button><button class="Hotspot" slot="hotspot-5"
+            data-position="-0.45958852955236623m 0.8566547299121063m -0.062489594965561654m"
+            data-normal="0.13281219307773118m 0.44492592427891725m 0.8856646336364769m"
+            data-orbit="1.22deg 79.92deg 5.309m" data-target="-0.75m 0.18m -4.35m" data-orbit="3.479deg 64.53deg 5.309m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Steering</div>
+        </button><button class="Hotspot" slot="hotspot-6"
+            data-position="-0.008253913027282511m 0.6235715614635307m -0.1746219408509601m"
+            data-normal="0.001967195156732021m 0.4858499940534355m 0.8740399953214338m"
+            data-orbit="-2.383deg 69.84deg 5.309m" data-target="0.06m -0.82m -4.02m"
+            data-visibility-attribute="visible">
+            <div class="HotspotAnnotation">Radio</div>
+        </button>
+        <div class="progress-bar hide" slot="progress-bar">
 
-                    </div>
+        </div>
+        <div>
+            <h3>Car Body Color</h3>
+            <div class="controls" id="color-controls">
+                <button data-color="#ff0000">Red</button>
+                <button data-color="#00ff00">Green</button>
+                <button data-color="#0000ff">Blue</button>
+            </div>
+            <h3>Rim Color</h3>
+            <div class="controls" id="color-controls1">
+                <button data-color="#000000">Black</button>
+                <button data-color="#ffffff">white</button>
+            </div>
+        </div>
 
 
-                  </model-viewer>
+    </model-viewer>
 
-                  <script type="module">
-                    const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
-                    const annotationClicked = (annotation) => {
-                      let dataset = annotation.dataset;
-                      modelViewer2.cameraTarget = dataset.target;
-                      modelViewer2.cameraOrbit = dataset.orbit;
+    <script type="module">
+        const modelViewer2 = document.querySelector("#hotspot-camera-view-demo");
+        const annotationClicked = (annotation) => {
+            let dataset = annotation.dataset;
+            modelViewer2.cameraTarget = dataset.target;
+            modelViewer2.cameraOrbit = dataset.orbit;
 
-                    }
+        }
 
-                    modelViewer2.querySelectorAll('button').forEach((hotspot) => {
-                      hotspot.addEventListener('click', () => annotationClicked(hotspot));
-                    });
-                  </script>
+        modelViewer2.querySelectorAll('button').forEach((hotspot) => {
+            hotspot.addEventListener('click', () => annotationClicked(hotspot));
+        });
+    </script>
+
+    <style type="text/css">
+        .view-button {
+            background: #fff;
+            border-radius: 4px;
+            border: none;
+            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+            color: rgba(0, 0, 0, 0.8);
+            display: block;
+            font-family: Futura, Helvetica Neue, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            max-width: 128px;
+            overflow-wrap: break-word;
+            padding: 0.5em 1em;
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            transform: translate3d(-50%, -50%, 0);
+        }
+    </style>
+    <script>
+        const modelViewerColor = document.querySelector("model-viewer#hotspot-camera-view-demo");
+
+        document.querySelector('#color-controls').addEventListener('click', (event) => {
+            const colorString = event.target.dataset.color;
+            const material = modelViewerColor.model.materials[7];
+            material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+        });
+    </script>
+    <script>
+        const modelViewerColor1 = document.querySelector("model-viewer#hotspot-camera-view-demo");
+
+        document.querySelector('#color-controls1').addEventListener('click', (event) => {
+            const colorString1 = event.target.dataset.color;
+            const material1 = modelViewerColor.model.materials[1];
+            material1.pbrMetallicRoughness.setBaseColorFactor(colorString1);
+        });
+    </script>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
