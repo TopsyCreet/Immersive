@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Product Details</title>
-   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  <script type="module" src="assets/js/model-viewer.min.js"></script>
   <style>
     model-viewer {
       width: auto;
@@ -57,6 +57,19 @@
 
   <main id="main" data-aos="fade-up">
     <button onclick="window.location.href='index.html'">Back</button>
+     <div>
+            <h5>Car Body Color</h5>
+            <div class="controls" id="color-controls">
+                <button data-color="#ff0000">Red</button>
+                <button data-color="#00ff00">Green</button>
+                <button data-color="#0000ff">Blue</button>
+            </div>
+            <h5>Rim Color</h5>
+            <div class="controls" id="color-controls1">
+                <button data-color="#000000">Black</button>
+                <button data-color="#ffffff">white</button>
+            </div>
+        </div>
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
@@ -109,19 +122,7 @@
         <div class="progress-bar hide" slot="progress-bar">
 
         </div>
-        <div>
-            <h5>Car Body Color</h5>
-            <div class="controls" id="color-controls">
-                <button data-color="#ff0000">Red</button>
-                <button data-color="#00ff00">Green</button>
-                <button data-color="#0000ff">Blue</button>
-            </div>
-            <h5>Rim Color</h5>
-            <div class="controls" id="color-controls1">
-                <button data-color="#000000">Black</button>
-                <button data-color="#ffffff">white</button>
-            </div>
-        </div>
+       
 
 
     </model-viewer>
