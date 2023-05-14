@@ -60,38 +60,58 @@
                      <div class="container">
                         <div class="row">
                            <div class="col-md-7">
-                              <model-viewer id="hotspot-demo" src="assets/3D_assets/bike.glb"  ar-modes="webxr scene-viewer quick-look"
-                               camera-controls shadow-intensity="1.16" environment-image="images/music_hall_01_1k.hdr" 
-                               camera-orbit="-174.9deg 79.87deg 6.585m" field-of-view="20.26deg" min-camera-orbit="auto auto 2.185m" 
-                               min-field-of-view="16.26deg" exposure="1.24" autoplay camera-target="0.17m 0.59m 1.13m" interpolation-decay="200">
-                               <button class="Hotspot" slot="hotspot-1" data-position="0.18106230635618298m 0.32095082745720305m -0.07595242440511935m" data-normal="-0.14869234938414277m -0.4599466743597156m -0.87540827159678m" data-visibility-attribute="visible">
+                              <model-viewer id="hotspot-demo" src="assets/3D_assets/bike.glb"
+                              ar-modes="webxr scene-viewer quick-look" camera-controls shadow-intensity="1.16"
+                              environment-image="images/music_hall_01_1k.hdr" camera-orbit="-174.9deg 79.87deg 6.585m"
+                              field-of-view="20.26deg" min-camera-orbit="auto auto 2.185m" min-field-of-view="16.26deg"
+                              exposure="1.24" autoplay camera-target="0.17m 0.59m 1.13m" interpolation-decay="200">
+                              <button class="Hotspot" slot="hotspot-1"
+                                 data-position="0.18106230635618298m 0.32095082745720305m -0.07595242440511935m"
+                                 data-normal="-0.14869234938414277m -0.4599466743597156m -0.87540827159678m"
+                                 data-orbit="-182.2deg 81.12deg 3.911m" data-target="0.25m 0.1m 2.67m"
+                                 data-visibility-attribute="visible">
                                  <div class="HotspotAnnotation">Pedal</div>
-                             </button><button class="Hotspot" slot="hotspot-2" data-position="0.6344776966091115m 0.5883138520047964m -0.023089208445955745m" data-normal="0.002240728102193787m 0.01459834749324593m -0.999890927745641m" data-visibility-attribute="visible">
+                              </button><button class="Hotspot" slot="hotspot-2"
+                                 data-position="0.6344776966091115m 0.5883138520047964m -0.023089208445955745m"
+                                 data-normal="0.002240728102193787m 0.01459834749324593m -0.999890927745641m"
+                                 data-orbit="-223.4deg 85.68deg 4.689m" data-target="0.23m 0.5m 2.36m"
+                                 data-visibility-attribute="visible">
                                  <div class="HotspotAnnotation">Tyre</div>
-                             </button><button class="Hotspot" slot="hotspot-3" data-position="-0.2425081381095023m 0.9873216476946608m -0.007416933607498505m" data-normal="-0.1755955575590299m 0.08309452151020545m -0.9809492854681753m" data-visibility-attribute="visible">
+                              </button><button class="Hotspot" slot="hotspot-3"
+                                 data-position="-0.2425081381095023m 0.9873216476946608m -0.007416933607498505m"
+                                 data-normal="-0.1755955575590299m 0.08309452151020545m -0.9809492854681753m"
+                                 data-orbit="-54.06deg 52.01deg 3.891m" data-target="0.71m 0.23m -0.47m"
+                                 data-visibility-attribute="visible">
                                  <div class="HotspotAnnotation">Front Set</div>
-                             </button><button class="Hotspot" slot="hotspot-4" data-position="0.35153110293494305m 0.9355027659580236m -0.04082000401515783m" data-normal="-0.3519568015098719m 0.22083670928139962m -0.9095919731971602m" data-visibility-attribute="visible">
+                              </button><button class="Hotspot" slot="hotspot-4"
+                                 data-position="0.35153110293494305m 0.9355027659580236m -0.04082000401515783m"
+                                 data-normal="-0.3519568015098719m 0.22083670928139962m -0.9095919731971602m"
+                                 data-orbit="-155.9deg 22.57deg 3.845m" data-target="0.19m -0.53m 1.24m"
+                                 data-visibility-attribute="visible">
                                  <div class="HotspotAnnotation">Saddle</div>
-                             </button><button class="Hotspot" slot="hotspot-5" data-position="-0.08328774003275341m 0.7665322390597133m -0.03520634295217884m" data-normal="-0.0069334635443521545m -0.0027927174538980868m -0.9999720635160273m"   data-visibility-attribute="visible">
-                              <div class="HotspotAnnotation">Frame</div>
-                             </button>
-                                 <div class="progress-bar hide" slot="progress-bar">
-                                     <div class="update-bar"></div>
-                                 </div>
-                             </model-viewer>
-                             <script type="module">
+                              </button><button class="Hotspot" slot="hotspot-5"
+                                 data-position="-0.08328774003275341m 0.7665322390597133m -0.03520634295217884m"
+                                 data-normal="-0.0069334635443521545m -0.0027927174538980868m -0.9999720635160273m"
+                                 data-visibility-attribute="visible">
+                                 <div class="HotspotAnnotation">Frame</div>
+                              </button>
+                              <div class="progress-bar hide" slot="progress-bar">
+                                 <div class="update-bar"></div>
+                              </div>
+                           </model-viewer>
+                           <script type="module">
                               const modelViewer2 = document.querySelector("#hotspot-demo");
                               const annotationClicked = (annotation) => {
-                                let dataset = annotation.dataset;
-                                modelViewer2.cameraTarget = dataset.target;
-                                modelViewer2.cameraOrbit = dataset.orbit;
-                                modelViewer2.fieldOfView = '90deg';
+                                 let dataset = annotation.dataset;
+                                 modelViewer2.cameraTarget = dataset.target;
+                                 modelViewer2.cameraOrbit = dataset.orbit;
+                                 modelViewer2.fieldOfView = '40deg';
                               }
-                            
+
                               modelViewer2.querySelectorAll('button').forEach((hotspot) => {
-                                hotspot.addEventListener('click', () => annotationClicked(hotspot));
+                                 hotspot.addEventListener('click', () => annotationClicked(hotspot));
                               });
-                            </script>
+                           </script>
                              
                              
                            </div>
