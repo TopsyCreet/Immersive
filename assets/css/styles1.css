@@ -5,7 +5,7 @@
         
   model-viewer {
     width: 100%;
-    height: 100%;
+    height: 80%;
     background-color:transparent;
     overflow-x: visible;
    z-index: 0;
@@ -13,13 +13,14 @@
   }
   #infoContainer1 {
     margin-left: 2px;
-    width: 30%;
-  height: 98%;
+    top: 100%;
+    width: 98%;
+  height: 58%;
     padding: 10px;
     background-color: #f9f9f979;
     border: 0.5px solid #ddd;
-    position: absolute;
-    z-index: 1;
+position: absolute;
+    z-index: 0;
   
   
   }
@@ -45,14 +46,14 @@
   }
   #infoContainer{
     margin-left: 2px;
-    width: 55%;
+    width: 70%;
   height: 25%;
     padding: 10px;
-    right:0%;
+    right:26%;
     bottom: 0%;
     background-color: #f9f9f979;
     border: 1px solid #ddd;
-    border-radius: 25px 2px 2px 25px;
+    border-radius: 2px 25px 25px 2px;
     position: absolute;
     z-index: 1;
     display: none;
@@ -70,12 +71,13 @@
     font-size: 12px;
     font-weight: 700;
     max-width: 128px;
-  position: absolute;
+
+position: absolute;
   transform: translate(10px, 10px);
   border-radius: 10px;
   padding: 10px;
-  right: 55%;
-  width: 10%;
+  right: 85%;
+  width: 17%;
   height: 3%;
 }
     
@@ -98,7 +100,7 @@
     width: 30%;
   height: 98%;
     padding: 10px;
-    background-color: #f9f9f979;
+    background-color: #f9f9f988;
     border: 1px solid #ddd;
 
     position: absolute;
@@ -123,7 +125,7 @@
   
   }
   .annotation{
-    background: #fff;
+
     border-radius: 4px;
     border: none;
     box-sizing: border-box;
@@ -133,12 +135,12 @@
     font-size: 12px;
     font-weight: 700;
     max-width: 128px;
-  position: absolute;
   transform: translate(10px, 10px);
+ position:absolute;
   border-radius: 10px;
   padding: 10px;
-  right: 65%;
-  width: 4%;
+  right: 64.5%;
+  width: 4.5%;
   height: 3%;
 }
     
@@ -153,6 +155,7 @@ html {
 }
 
 body {
+  background-color: #ffffff;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -190,19 +193,6 @@ display: flex;
 }
 
 
-.Hotspot {
-  background: #fff;
-  border-radius: 32px;
-  border: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 24px;
-  padding: 8px;
-  position: relative;
-  transition: opacity 0.3s;
-  width: 24px;
-}
 
 .Hotspot:not([data-visible]) {
   background: transparent;
