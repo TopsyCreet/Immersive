@@ -6,7 +6,7 @@
   model-viewer {
     width: 100%;
     height: 80%;
-    background-color:transparent;
+    background-color:rgb(198, 198, 198);
     overflow-x: visible;
    z-index: 0;
     background-size: cover;
@@ -46,11 +46,11 @@ position: absolute;
   }
   #infoContainer{
     margin-left: 2px;
-    width: 70%;
+    width: 80%;
   height: 25%;
     padding: 10px;
-    right:26%;
-    bottom: 13%;
+    right:16%;
+    bottom: 10%;
     background-color: #f9f9f979;
     border: 1px solid #ddd;
     border-radius: 2px 25px 25px 2px;
@@ -77,7 +77,7 @@ position: absolute;
   border-radius: 10px;
   padding: 10px;
   right: 85%;
-  width: 17%;
+  width: 19%;
   height: 4%;
 }
     
@@ -139,8 +139,8 @@ position: absolute;
  position:absolute;
   border-radius: 10px;
   padding: 10px;
-  right: 64.5%;
-  width: 4.5%;
+  right: 60.5%;
+  width: 7.5%;
   height: 3%;
 }
     
